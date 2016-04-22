@@ -1,10 +1,38 @@
-vagrant environment set up for Flink Streaming
+vagrant-flink
+============================
 
-prerequisites:
-vagrant
-virtualbox
+# 1. Basics
+### Vagrant project to spin up a cluster of 3 task managers node and 1 job manager node, residing on 64-bit Ubuntu Linux virtual machines
+Ideal for development cluster on a laptop with at least 12GB of memory.
 
-to start the cluster:
-./start-cluster.sh
+# 2. Prerequisites
+1. At least 2GB memory for each VM node.
+2. Vagrant [latest version]
+3. VirtualBox [latest version]
 
-then go to localhost:8081 for job manager UI.
+# 3. Getting Started
+1. [Download and install VirtualBox](https://www.virtualbox.org/wiki/Downloads)
+2. [Download and install Vagrant](http://www.vagrantup.com/downloads.html).
+3. Run ```vagrant box add ubuntu/trusty64```
+4. Git clone this project, and change directory (cd) into this project (directory).
+8. Run ```./start-cluster.sh``` to create the VMs.
+9. Run ```vagrant ssh flinkmaster``` to get into your job manager VM.
+   Run ```vagrant ssh flinkworker-0[0-2]``` to get into your job manager VM.
+10. Run ```vagrant destroy``` when you want to destroy and get rid of the VM.
+
+# 4. Job Manager UI
+  http://localhost:8081
+
+
+# 6. Copyright
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
