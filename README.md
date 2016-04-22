@@ -24,7 +24,7 @@ Ideal for development cluster on a laptop with at least 12GB of memory.
   http://localhost:8081
 
 
-# 6. Copyright
+# 5. Copyright
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
