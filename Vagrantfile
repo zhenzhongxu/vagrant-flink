@@ -25,8 +25,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
       master.vm.provider :virtualbox do |vb|
         vb.name = $master_name
-        vb.memory = 2048
-        vb.cpus = 2
+        vb.memory = 1024
+        vb.cpus = 1
         vb.customize ["modifyvm", :id, "--nic2", "hostonly"]
         vb.customize ["modifyvm", :id, "--nicpromisc2", "allow-all"]
       end
@@ -70,8 +70,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
     worker.vm.provider :virtualbox do |vb|
       vb.name = vm_name
-      vb.memory = 2048
-      vb.cpus = 2
+      vb.memory = 1024
+      vb.cpus = 1
       vb.customize ["modifyvm", :id, "--nic2", "hostonly"]
       vb.customize ["modifyvm", :id, "--nicpromisc2", "allow-all"]
     end

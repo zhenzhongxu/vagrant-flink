@@ -3,10 +3,10 @@ vagrant-flink
 
 # 1. Basics
 ### Vagrant project to spin up a cluster of 3 task managers node and 1 job manager node, residing on 64-bit Ubuntu Linux virtual machines
-Ideal for development cluster on a laptop with at least 12GB of memory.
+Ideal for development cluster on a laptop with at least 8GB of memory.
 
 # 2. Prerequisites
-1. At least 2GB memory for each VM node.
+1. At least 1GB memory for each VM node.
 2. Vagrant [latest version]
 3. VirtualBox [latest version]
 
