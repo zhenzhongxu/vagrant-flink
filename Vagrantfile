@@ -19,7 +19,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # set up flink master
   config.vm.define(MASTER_NAME, autostart: false) do |master|
-      master.vm.box = "ubuntu/xenial64"
+      master.vm.box = "ubuntu/trusty64"
       master.vm.hostname = MASTER_NAME
       master.vm.network "private_network", ip: MASTER_IP
 
@@ -63,7 +63,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
    vm_ssh_host_port = "222%01d" % [i]
 
    config.vm.define(vm_name) do |worker|
-    worker.vm.box = "ubuntu/xenial64"
+    worker.vm.box = "ubuntu/trusty64"
 
     worker.vm.hostname = vm_name
     worker.vm.network "private_network", ip: vm_static_ip
