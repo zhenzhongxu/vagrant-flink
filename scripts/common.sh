@@ -1,5 +1,5 @@
 #!/bin/bash
-FLINK_VERSION=flink-1.0.1
+FLINK_VERSION=flink-1.2.1
 # So we dont need to pass in i to the scripts
 NODE_NUMBER=`hostname | tr -d node`
 

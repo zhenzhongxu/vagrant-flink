@@ -1,11 +1,11 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
-WORKER_NAME_PREFIX = "flinkworker"
-MASTER_NAME = "flinkmaster"
+WORKER_NAME_PREFIX = "taskmanager"
+MASTER_NAME = "jobmanager"
 MASTER_IP = "192.168.10.100"
 WORKER_IP_TEMPLATE = "192.168.10.%d"
-NUMBER_OF_WORKER_INSTANCES = 3
+NUMBER_OF_WORKER_INSTANCES = 2
 VAGRANTFILE_API_VERSION = "2"
 
 def workername(i)
