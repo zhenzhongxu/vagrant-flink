@@ -3,7 +3,7 @@ vagrant-flink
 Currently supporting Apache Flink 1.2.1.
 
 # 1. Basics
-### Vagrant project to spin up a cluster of 2 task manager nodes and 1 job manager node, residing on 64-bit Ubuntu Trusty Linux virtual machines
+### Vagrant project to spin up a cluster of 2 task manager nodes and 1 job manager node, residing on 64-bit Ubuntu Xenial Linux virtual machines
 Ideal for development cluster on a laptop with at least 8GB of memory.
 
 # 2. Prerequisites
@@ -14,7 +14,7 @@ Ideal for development cluster on a laptop with at least 8GB of memory.
 # 3. Getting Started
 1. [Download and install VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 2. [Download and install Vagrant](http://www.vagrantup.com/downloads.html).
-3. Run ```vagrant box add ubuntu/trusty64```
+3. Run ```vagrant box add ubuntu/xenial64```
 4. Git clone this project, and change directory (cd) into this project (directory).
 8. Run ```./start-cluster.sh``` to create the VMs.
 9. Run ```vagrant ssh jobmanager``` to get into your job manager VM.
