@@ -16,6 +16,7 @@ Ideal for development cluster on a laptop with at least 8GB of memory.
 2. [Download and install Vagrant](http://www.vagrantup.com/downloads.html).
 3. Run ```vagrant box add ubuntu/trusty64```
 4. Git clone this project, and change directory (cd) into this project (directory).
+6. Update the FLINK_VERSION value in the file scripts/common.sh, according to the ones avaliable 
 8. Run ```./start-cluster.sh``` to create the VMs.
 9. Run ```vagrant ssh jobmanager``` to get into your job manager VM.
    Run ```vagrant ssh taskmanager-0[0-2]``` to get into your job manager VM.
